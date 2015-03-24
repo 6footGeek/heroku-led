@@ -1,0 +1,19 @@
+{
+  "name": "LEDcube",
+  "version": "0.0.2",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "debug": "*",
+    "express": "~4.0.0",
+    "jade": "*",
+    "mongodb": "^1.4.34",
+    "mongoskin": "0.6.1",
+    "morgan": "*",
+    "serve-favicon": "*"
+  }
+}

@@ -1,0 +1,53 @@
+extends layout
+
+block content
+  h1= title
+  p LED cube
+  //Wrapper
+  #wrapper
+      //LED INFO
+      #ledInfo
+          h2 LED info
+          p
+              strong ID:
+              |  <span id='infoID'></span>
+              br
+              strong X:
+              |  <span id='infoX'></span>
+              br
+              strong Y:
+              |  <span id='infoY'></span>
+              br
+              strong Z:
+              |  <span id='infoZ'></span>
+              br
+              strong Colour:
+              |  <span id='infoColour'></span>
+
+
+
+      //LED LIST
+      h2 LED List
+      #ledList
+          table
+              thead
+                  th id
+                  th x
+                  th y
+                  th z
+                  th colour
+                  th delete
+              tbody
+      //ADD LED
+      h2 Add LED
+      #addLED
+          fieldset
+              input#inputLEDx(type='text', placeholder='x')
+              br
+              input#inputLEDy(type='text', placeholder='y')
+              br
+              input#inputLEDz(type='text', placeholder='z')
+              br
+              input#inputLEDcolour(type='text', placeholder='colour')
+              br
+              button#btnAddLED Add LED
