@@ -22,6 +22,30 @@ $(document).ready(function() {
 
 // Functions =============================================================
 
+// function createCubeSolid() {
+    
+//     var cubesize = 4;
+//     var id = 0;
+//       // cube of cubes! 4 * 4 * 4 but set amount via cubesize
+//             for (var x = 0; x < cubeSize; x++) {
+//                 for (var y = 0; y < cubeSize; y++) {
+//                     for (var z = 0; z < cubeSize; z++) {
+//                         id++;
+//                         var randomColor = Math.random() * 0xFFFFFF << 0;
+//                         cubeData.push({
+//                             "id": id,
+//                             "x": x,
+//                             "y": y,
+//                             "z": z,
+//                             "colour": 0x00FF00 
+    
+// }
+// }
+// }
+// };
+
+
+
 // Fill table with data
 function populateTable() {
 
