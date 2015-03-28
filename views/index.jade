@@ -13,16 +13,14 @@ block content
               |  <span id='infoID'></span>
               br
               strong X:
-              |  <span id='infoX'></span>
+              |  <span id='infoDelay'></span>
               br
               strong Y:
-              |  <span id='infoY'></span>
+              |  <span id='infoPattern'></span>
               br
               strong Z:
-              |  <span id='infoZ'></span>
+              |  <span id='infoDuration'></span>
               br
-              strong Colour:
-              |  <span id='infoColour'></span>
 
 
 
@@ -32,22 +30,19 @@ block content
           table
               thead
                   th id
-                  th x
-                  th y
-                  th z
-                  th colour
+                  th Delay
+                  th Pattern
+                  th Duration
                   th delete
               tbody
       //ADD LED
       h2 Add LED
       #addLED
           fieldset
-              input#inputLEDx(type='text', placeholder='x')
+              input#inputDelay(type='text', placeholder='delay')
               br
-              input#inputLEDy(type='text', placeholder='y')
+              input#inputPattern(type='text', placeholder='pattern')
               br
-              input#inputLEDz(type='text', placeholder='z')
-              br
-              input#inputLEDcolour(type='text', placeholder='colour')
+              input#inputDuration(type='text', placeholder='duration')
               br
               button#btnAddLED Add LED

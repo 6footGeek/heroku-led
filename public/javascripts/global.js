@@ -62,10 +62,9 @@ function populateTable() {
         $.each(data, function(){
             tableContent += '<tr>';
             tableContent += '<td><a href="#" class="ledInfo" rel="' + this._id + '">' + this._id + '</a></td>';
-            tableContent += '<td>' + this.x + '</td>';
-            tableContent += '<td>' + this.y + '</td>';
-            tableContent += '<td>' + this.z + '</td>';
-            tableContent += '<td>' + this.colour + '</td>';
+            tableContent += '<td>' + this.delay + '</td>';
+            tableContent += '<td>' + this.pattern + '</td>';
+            tableContent += '<td>' + this.duration + '</td>';
             tableContent += '<td><a href="#" class="deleteLINK" rel="' + this._id + '">delete</a></td>';
             tableContent += '</tr>';
         });
@@ -84,10 +83,9 @@ function showLEDinfo(event) {
     var thisLEDObject = ledListData[arrayPosition];
 
 $('#infoID').text(thisLEDObject._id);
-$('#infoX').text(thisLEDObject.x);
-$('#infoY').text(thisLEDObject.y);
-$('#infoZ').text(thisLEDObject.z);
-$('#infoColour').text(thisLEDObject.colour);
+$('#infoDelay').text(thisLEDObject.delay);
+$('#infoPattern').text(thisLEDObject.pattern);
+$('#infoDuration').text(thisLEDObject.duration);
 };
 
 
@@ -107,10 +105,9 @@ $('add input').each(function(index, val) {
 if(errorCount === 0) {
 	//if it is, make ledObject
 	var newLED = {
-'x': $('#add fieldset input#inputLEDx').val(),
-'y': $('#add fieldset input#inputLEDy').val(),
-'z': $('#add fieldset input#inputLEDz').val(),
-'colour': $('#add fieldset input#inputLEDcolour').val(),
+'delay': $('#add fieldset input#inputDelay').val(),
+'pattern': $('#add fieldset input#inputPattern').val(),
+'duration': $('#add fieldset input#inputDuration').val(),
 	}
 // AJAX to post led to addled service
 
